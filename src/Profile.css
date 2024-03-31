@@ -1,0 +1,37 @@
+/* src/Profile.css */
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 300px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-label{
+  font-weight: bold;
+  display: inline-block;
+  width: 80px;
+}
+
+.profile-container input,
+.profile-container button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    width: 90%;
+  }
+}
